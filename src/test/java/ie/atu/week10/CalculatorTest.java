@@ -14,11 +14,16 @@ public class CalculatorTest {
     @Test
     void subtractTest(){
         newCalc = new Calculator();
-        assertEquals(-2, newCalc.subtract(4,6));
+        assertEquals(2, newCalc.subtract(6,4));
     }
     @Test
     void multiplyTest(){
         newCalc = new Calculator();
         assertEquals(24, newCalc.multiply(4,6));
+    }
+    @Test
+    void divideTest(){
+        newCalc = new Calculator();
+        assertEquals(2, newCalc.divide(6,3));
     }
 }
